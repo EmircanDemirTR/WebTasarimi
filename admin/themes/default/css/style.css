@@ -1,0 +1,107 @@
+/**
+ * @author Fikir Kahvesi
+ * @copyright 2013
+ */
+ 
+@charset "utf-8";
+
+body { background:url(../images/bodyBg.png) repeat; }
+
+a:focus { background:none; outline:none; }
+
+h1, h2, h3, h4, h5, h6 { margin:0; padding:0; font-weight:normal; }
+
+#header { margin:0; padding:0; background-color:#2e363f; position:relative; }
+
+	#header .content { width:1000px; margin:0 auto; }
+
+	#header .title { margin:0 auto; height:85px; }
+
+	#header .menu { height:53px; background-color:#0873bb; }
+		
+		/**/
+		
+		.menu .nav { position:relative; left:0; display:block; float:left; margin:6px 0 0 -5px; }
+	
+		.menu .nav.pull-right { float: right; margin-right:0; }
+		
+		.menu .nav>li { float:left; }
+		
+		.menu .nav>li>a { float:none; padding:10px 16px 10px 10px; color:#FFF; text-decoration:none; outline:none; }
+		
+		.menu .nav .dropdown-toggle .caret { margin-top: 8px; outline:none; }
+		
+		.menu .nav>li>a:focus, .menu .nav>li>a:hover { color: #FFF; text-decoration: none; background-color: #38bcdd;  -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; }
+		
+		.menu .nav>.active>a, .menu .nav>.active>a:hover, .menu .nav>.active>a:focus { color: #FFF; text-decoration: none; background-color: #0873bb; -webkit-box-shadow: inset 0 3px 8px rgba(0,0,0,0.125); -moz-box-shadow: inset 0 3px 8px rgba(0,0,0,0.125); box-shadow: inset 0 3px 8px rgba(0,0,0,0.125); }
+		
+		/**/
+		
+	#header .breadcrumbs { height:37px; background-color:#FFF; border-bottom:1px solid #e3ebed; }
+	
+		#header .breadcrumbs a { font-size:11px; color:#404040; padding-top:8px; margin:0 10px 0 5px; display:block; float:left; opacity:0.7; }
+		
+		#header .breadcrumbs i { margin-top:-1px; }
+		
+		#header .subIcon { background:url(../images/icon-left.png) 0 15px no-repeat; padding-left:15px; }
+		
+		#header .select { font-weight:bold; }
+
+.admin-caption { float:left; width:570px; padding:20px 0 0 0; }
+
+	.admin-caption a { color:#6a7a8d; letter-spacing:-1px; }
+
+	.admin-caption a:hover { color:#FFF; }
+
+.top-right-menu { float:right; width:430px; padding:20px 0 0 0; }
+	
+	/**/
+	
+	.top-right-menu .nav { position: relative; left: 0; display: block; float: left; margin:0; }
+
+	.top-right-menu .nav.pull-right { float: right; margin-right: 0 }
+	
+	.top-right-menu .nav>li { float:left; }
+	
+	.top-right-menu .nav>li>a { float: none; padding: 10px 15px 10px; color: #999999; text-decoration: none; font-size:12px; }
+	
+	:root .top-right-menu .nav>li>a>i { margin-top:-1px; line-height:22px; }
+	
+	.top-right-menu .nav .dropdown-toggle .caret { margin-top: 8px; }
+	
+	.top-right-menu .nav>li>a:focus, .top-right-menu .nav>li>a:hover { color: #FFF; text-decoration: none; background-color: #232a32; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; }
+	
+	.top-right-menu .nav>.active>a, .top-right-menu .nav>.active>a:hover, .top-right-menu .nav>.active>a:focus { color: #FFF; text-decoration: none; background-color: #0873bb; -webkit-box-shadow: inset 0 3px 8px rgba(0,0,0,0.125); -moz-box-shadow: inset 0 3px 8px rgba(0,0,0,0.125); box-shadow: inset 0 3px 8px rgba(0,0,0,0.125); }
+	
+	/**/
+
+#main { width:990px; margin:15px auto; padding:0; }
+
+#main h2 { margin-bottom:20px; }
+
+.btn-margin { margin:8px 0 0 -20px; }
+
+.btn-margin-title { margin:8px 0 0 10px; }
+
+.btn-margin-category { margin:8px 0 0 -40px; }
+
+.img-rounded { -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; }
+
+#gallery { margin:0; padding:0; }
+
+#gallery li { list-style:none; padding:10px; width:160px; height:172px; float:left; margin:0 10px 25px 7px; cursor:move; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

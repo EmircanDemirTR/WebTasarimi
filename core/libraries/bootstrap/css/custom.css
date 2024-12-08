@@ -1,0 +1,8 @@
+/* your styles go here */
+
+/*input, textarea, select{ font-size:13px !important;} */
+
+#gallery .col-sm-2 { cursor:move; }
+.modal { z-index: 10000 !important;}
+
+.dataTables_length select{ font-size:14px !important; padding:5px !important;}

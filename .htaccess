@@ -1,0 +1,29 @@
+<IfModule mod_rewrite.c>
+
+
+	RewriteEngine On
+	RewriteBase /
+
+
+	RewriteCond %{SERVER_PORT} 80
+	RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+	RewriteCond %{HTTPS} =on
+	RewriteCond %{HTTP_HOST} ^soloteknoloji.com.tr
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+
+
+	RewriteCond %{REQUEST_URI} !=/favicon.ico
+	RewriteCond $0 !=favicon.ico
+	RewriteRule ^([^/]+/)*favicon\.ico$ /favicon.ico [L]
+
+
+
+	RewriteRule ^(admin|images|core|theme|js|plugins|css|fonts|assets|HTWF|assets/fonts|ntunnel_mysql.php|assets/js|assets/js|favicon.ico|skin.css|dependencies|media|vendor|img)($|/) - [L]
+	
+	RewriteRule ^(tr|en|es)/(.*)$  index.php?url=$2&lang=$1&%{QUERY_STRING} [L,QSA]
+	RewriteRule ^(.*)$  index.php?url=$1&lang=tr&%{QUERY_STRING} [L,QSA]
+
+
+
+</IfModule>
